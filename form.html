@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Information Form</title>
+  <style>
+    header
+    {
+      background-color: #000000;
+      height: 200px;
+      border-radius: 5px;
+      margin-bottom: 80px;
+      box-shadow: 0 0 10px #000000;
+
+    }
+
+    nav{
+      background-color: #ff0000;
+      height: 100px;
+      border-radius: 5px;
+      margin-bottom: 80px;
+      box-shadow: 0 0 10px #000000;
+      margin-top: 100px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid black;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-family: s;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      margin-left: 4px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0px 0px 5px rgb(90, 87, 87);
+      transition: 0.5s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+      box-shadow: 0px 0px 5px rgb(0, 0, 0);
+      font-size: 14px;
+    }
+    footer
+    {
+      background-color: #000000;
+      height: 200px;
+      border-radius: 5px;
+      margin-top: 80px;
+      box-shadow: 0 0 10px #000000;
+
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h2>Student Information Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Full Name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" placeholder="Phone Number" name="phone" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <!-- <option value="other">Other</option> -->
+      </select>
+
+      <label for="course">Course:</label>
+      <input type="text" id="course" placeholder="Course" name="course" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <footer class="footer">
+
+  </footer>
+</body>
+</html>
+
+
+
+
+
